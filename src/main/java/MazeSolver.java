@@ -44,7 +44,6 @@ public class MazeSolver {
             exploreNeighbours(currentX, currentY);
 
         }
-
     }
 
     private void exploreNeighbours(int currentX, int currentY) {

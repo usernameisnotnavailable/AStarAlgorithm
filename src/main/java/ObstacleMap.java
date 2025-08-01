@@ -20,7 +20,7 @@ public class ObstacleMap extends Map{
         for (int j = 3; j < size -3; j++) {
             int potentialX = halfX;
             int potentialY = j;
-            if(potentialX < 0 || potentialX >= size || potentialY < 0 || potentialY >= size || potentialX == super.startX && potentialY == super.startY || potentialX == super.startX && potentialY == super.endY) continue;
+            if(potentialX < 0 || potentialX >= size || potentialY < 0 || potentialY >= size || potentialX == super.startX && potentialY == super.startY || potentialX == super.endX && potentialY == super.endY) continue;
             super.map[potentialX][potentialY] = 1;
         }
 

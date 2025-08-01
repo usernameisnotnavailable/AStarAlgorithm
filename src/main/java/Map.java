@@ -9,7 +9,7 @@ public abstract class Map {
     int size;
 
     int MIN_SIZE = 20;
-    int MAX_SIZE = 50;
+    int MAX_SIZE = 40;
 
     public Map(){
         createMap();

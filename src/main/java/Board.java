@@ -4,7 +4,7 @@ import java.awt.*;
 public class Board extends JPanel {
     private MazeSolver maze;
     private int size;
-    private int CELL_SIZE = 20;
+    private int CELL_SIZE = 25;
 
     private int PATH = 0;
     private int WALL = 1;
@@ -33,7 +33,8 @@ public class Board extends JPanel {
             g.setColor(Color.green);
             g.fillRect(node.posX * CELL_SIZE, node.posY * CELL_SIZE, CELL_SIZE, CELL_SIZE);
             g.setColor(Color.BLACK);
-            g.drawString(String.valueOf(node.f),node.posX * CELL_SIZE, node.posY * CELL_SIZE);
+            g.setFont(new Font("Serif", Font.BOLD, 20));
+            g.drawString(String.valueOf(node.f),node.posX * CELL_SIZE, node.posY * CELL_SIZE + CELL_SIZE);
         });
 
 
