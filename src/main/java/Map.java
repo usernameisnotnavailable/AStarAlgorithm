@@ -4,8 +4,8 @@ public abstract class Map {
     int[][] map;
     int startX;
     int startY;
-    int endX;
-    int endY;
+    int targetX;
+    int targetY;
     int size;
 
     int MIN_SIZE = 20;
@@ -27,8 +27,8 @@ public abstract class Map {
         map = new int[size][size];
         startX = random.nextInt(0, size);
         startY = random.nextInt(0, size);
-        endX = random.nextInt(0, size);
-        endY = random.nextInt(0, size);
+        targetX = random.nextInt(0, size);
+        targetY = random.nextInt(0, size);
         for (int i = 0; i < size; i++) {
             for (int j = 0; j < size; j++) {
                 map[i][j] = 0;
